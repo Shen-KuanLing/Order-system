@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>DEMO</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="wrapper">
+    <div id="header">
+        <h1><a href="HOME.html">均湛公司 X 豆干訂購系統</a></h1>
+        <p class="copy">Designer: Lulu </p>
+
+        <ul id="navi">
+            <!-- 導覽列從此開始 -->
+            <li id="navi_01">
+                <a href="#">新增資料</a>
+                <ul id="a1">
+                    <li><a href="insert.html">新增客戶</a>
+                    </li>
+                    <li><a href="product.html">新增商品</a>
+                    </li>
+                    <li><a href="order.html">訂單申請</a>
+                    </li>
+                    <li><a href="order_content.html">新增訂單內容</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="navi_02">
+                <a href="#">查詢資料</a>
+                <ul id="a1">
+                    <li><a href="search.html">查詢顧客資料</a>
+                    </li>
+                    <li><a href="search_product.php">查看商品資料
+                    </a>
+                    </li>
+                    <li><a href="search_order.html">查詢訂單資料</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="navi_03">
+                <a href="#">修改資料</a>
+                <ul id="a1">
+                    <li><a href="update_cust.php">修改顧客資料</a>
+                    </li>
+                    <li><a href="update_product.php">修改商品資料</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="navi_04">
+                <a href="2_公司訂購單.pdf">公司訂單</a>
+            </li>
+            <li id="navi_05">
+                <!--<a href="Sold.html">系統手冊</a>-->
+                <a href="./系統手冊.pdf" download="系統手冊">系統手冊</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="contents">
+        <form name="form" action="http://127.0.0.1/demo/product.php" method="POST" accept-charset="UTF-8" align="center">
+            <div class="detail_box clearfix">
+                <div class="link_box">
+                    <h3>新增產品資料</h3>
+                    <ul>
+                        <li>
+                            產品編號:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="varchar(10)" name="product_id" size="30" />&nbsp <br/><br/>
+                        </li>
+                        <li>
+                            商品名稱:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="varchar(15)" name="name" size="30" autocomplete="off"/>&nbsp <br/><br/>
+                        </li>
+                        <li>
+                            單價:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="varchar(10)" name="price" size="30" />&nbsp <br/><br/>
+                        </li>
+                        <input type="reset" style="background-color:7d5a5a;color:white; font-weight:bold; border-radius:13px; width:60px;height:40px;border:2px blue none;" value="清除">
+                        &nbsp&nbsp
+                        <input type="submit" style="background-color:7d5a5a;color:white; font-weight:bold; border-radius:13px; width:60px;height:40px;border:2px blue none;" align="right" value="儲存">
+                        </br>
+                    </ul>
+                </div>
+            </div>
+        </form>
+</body>
+
+</html>
